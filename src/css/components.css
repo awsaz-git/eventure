@@ -1,0 +1,124 @@
+/** buttons **/
+
+.button-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2B293D;
+    font-family: var(--font-family);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1.5px solid #2B293D;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: transform 0.5s ease;
+}
+
+.button-1:hover {
+    transform: translateY(-1px);
+}
+
+.button-1:active {
+    transform: translateY(0px);
+}
+
+.button-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: var(--font-family);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondary);
+    cursor: pointer;
+
+    transition: transform 0.5s ease;
+}
+
+.button-2:hover {
+    transform: translateY(-1px);
+}
+
+.button-2:active {
+    transform: translateY(0px);
+}
+
+.button-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: var(--font-family);
+    color: var(--secondary);
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    font-weight: 500;
+
+    transition: transform 0.5s ease;
+}
+
+.button-3:hover {
+    transform: translateY(-1px);
+}
+
+.button-3:active {
+    transform: translateY(0px);
+}
+
+/** input fields **/
+
+.input-1 {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: var(--font-family);
+    width: 85%;
+}
+
+/** checkboxes **/
+
+.checkbox-1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+}
+
+.checkbox-1:checked {
+    accent-color: #2D2C3C;
+}
+
+.width-xsmall {
+    width: 75px;
+    height: 35px;
+}
+
+.width-small {
+    width: 100px;
+    height: 40px;
+}
+
+.width-medium {
+    width: 150px;
+}
+
+.width-large {
+    width: 200px;
+}
+
+.width-xlarge {
+    width: 250px;
+}
+
+.color-black {
+    color: black;
+}

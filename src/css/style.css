@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('components.css');
+@import url('layout.css');
+@import url('modules.css');
+@import url('pages.css');
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+
+  --primary: #FFFFFF;
+  --secondary: #2B293D;
+  --accent-purple: #4539B4;
+  --accent-grey: #C4C4C4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
