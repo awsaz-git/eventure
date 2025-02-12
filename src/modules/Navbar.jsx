@@ -33,7 +33,7 @@ function Navbar() {
                     </Link>
                     <Link to="/events" className='flex-column justify-center align-center nav-button'>
                         <div>Events</div>
-                        <div className={`nav-button-selected ${location.pathname === '/events' ? '' : 'not'}`}></div>
+                        <div className={`nav-button-selected ${location.pathname.includes('/events') || location.pathname.includes('/e') ? '' : 'not'}`}></div>
                     </Link>
                     <Link to="/forum" className='flex-column justify-center align-center nav-button'>
                         <div>Forum</div>

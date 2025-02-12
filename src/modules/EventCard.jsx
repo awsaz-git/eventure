@@ -1,9 +1,10 @@
 import '../css/style.css'
+import { Link } from 'react-router-dom';
 
 function EventCard() {
 
     return (
-        <div className='event-card'>
+        <Link to='/e' className='event-card'>
             <div className='event-top'>
                 <div className='event-star'>
                     <img src="/icons/outline/star.svg" alt="interested" />
@@ -20,7 +21,7 @@ function EventCard() {
                     <div className='event-info-text'>JOD 999</div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }
 

@@ -1,7 +1,24 @@
 import '../css/style.css'
 import EventCard from './EventCard.jsx'
+import { useEffect } from 'react';
 
 function EventSection() {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+
+                entry.target.classList.add('show')
+            })
+        })
+
+        const card = document.querySelectorAll('.event-card');
+
+        card.forEach(element => {
+            observer.observe(element);
+        });
+
+    }, []);
 
     const openFilterSheet = () => {
         const bototmSheet = document.querySelector('.filter-bottomsheet-container');

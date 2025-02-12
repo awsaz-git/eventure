@@ -30,7 +30,7 @@ function Sidebar() {
                             <div>Home</div>
                         </Link>
                         <Link to="/events" className='flex-row justify-start align-center sidebar-button' onClick={closeSidebar}>
-                            <div className={`sidebar-button-selected ${location.pathname === '/events' ? '' : 'not'}`}></div>
+                            <div className={`sidebar-button-selected ${location.pathname.includes('/events') || location.pathname.includes('/e') ? '' : 'not'}`}></div>
                             <div>Events</div>
                         </Link>
                         <Link to="/forum" className='flex-row justify-start align-center sidebar-button' onClick={closeSidebar}>
