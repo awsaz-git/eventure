@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Hero from '../modules/Hero.jsx'
 import EventSection from '../modules/EventSection.jsx'
+import FilterBottomSheet from '../modules/FilterBottomSheet.jsx'
 
 function Events() {
 
@@ -19,6 +20,7 @@ function Events() {
         <>
             <Hero headline1={'Find What Excites'} headline2={'You.'} />
             <EventSection />
+            <FilterBottomSheet />
         </>
     );
 }

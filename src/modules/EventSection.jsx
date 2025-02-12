@@ -3,10 +3,19 @@ import EventCard from './EventCard.jsx'
 
 function EventSection() {
 
+    const openFilterSheet = () => {
+        const bototmSheet = document.querySelector('.filter-bottomsheet-container');
+        const overlay = document.querySelector('.overlay');
+
+        bototmSheet.style.bottom = '0';
+        overlay.classList.toggle('open');
+        document.body.style.overflowY = 'hidden';
+    }
+
     return (
         <div className='flex-column align-center justify-center events-container'>
             <div className='flex-column align-end events-content'>
-                <button className='flex-row justify-around align-center button-1 width-medium filter-button'>
+                <button className='flex-row justify-around align-center button-1 width-medium filter-button' onClick={openFilterSheet}>
                     <div>Filter</div>
                     <img src="/icons/outline/adjustments-horizontal.svg" alt="filter" />
                 </button>

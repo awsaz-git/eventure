@@ -602,6 +602,43 @@
 
 .events-container {
     width: 100vw;
+    position: relative;
+}
+
+.filter-bottomsheet-container {
+    position: fixed;
+    bottom: -100vh;
+    left: 0;
+    z-index: 9999;
+    background-color: white;
+    height: 55vh;
+    width: 100vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.15);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    z-index: 9999;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    transition: bottom 1s ease, height 1s ease;
+}
+
+.filter-bottomsheet-container::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-bottomsheet-content {
+    width: 80%;
+    overflow-y: scroll;
+}
+
+.filter-exit-icon {
+    position: absolute;
+    width: 24px;
+    top: 15px;
+    right: 15px
 }
 
 .events-content {
@@ -629,6 +666,42 @@
     width: 30%;
     padding-bottom: 50px;
     border-right: solid 0.25px rgba(169, 169, 169, 0.45);
+}
+
+.filter-content {
+    gap: 45px;
+}
+
+.filters-title {
+    color: black;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.filter-section {
+    gap: 15px;
+}
+
+.filter-section div {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.filter-options {
+    gap: 10px;
+    padding-bottom: 30px;
+    border-bottom: solid 0.25px rgba(169, 169, 169, 0.45);
+}
+
+.filter-option {
+    gap: 10px;
+}
+
+.filter-option div {
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 /** event card **/
@@ -976,40 +1049,12 @@
         display: flex;
     }
 
-    .filter-content {
-        gap: 45px;
+    .filter-bottomsheet-container {
+        display: none;
     }
 
-    .filters-title {
-        color: black;
-        font-weight: 600;
-        font-size: 24px;
-    }
-
-    .filter-section {
-        gap: 15px;
-    }
-
-    .filter-section div {
-        color: black;
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-    .filter-options {
-        gap: 10px;
-        padding-bottom: 30px;
-        border-bottom: solid 0.25px rgba(169, 169, 169, 0.45);
-    }
-
-    .filter-option {
-        gap: 10px;
-    }
-
-    .filter-option div {
-        color: black;
-        font-weight: 400;
-        font-size: 14px;
+    .overlay {
+        display: none;
     }
 }
 

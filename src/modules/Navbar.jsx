@@ -11,6 +11,7 @@ function Navbar() {
 
         sidebar.style.right = '0';
         overlay.classList.toggle('open');
+        document.body.style.overflowY = 'hidden';
     }
 
     return (

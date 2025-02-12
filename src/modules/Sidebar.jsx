@@ -10,6 +10,7 @@ function Sidebar() {
 
         sidebar.style.right = '-100vw';
         overlay.classList.toggle('open');
+        document.body.style.overflowY = '';
     }
 
     return (
