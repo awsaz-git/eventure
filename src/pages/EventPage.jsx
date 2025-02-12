@@ -1,4 +1,5 @@
 import '../css/style.css'
+import HomeEventCard from '../modules/HomeEventCard.jsx'
 
 function EventPage() {
 
@@ -17,12 +18,11 @@ function EventPage() {
                             Event Title that can go up to as many lines the event title is
                         </div>
                         <div className='flex-row align-center'>
-                            <img src="/icons/outline/star.svg" alt="interested" />
-                            <img src="/icons/outline/share.svg" alt="share" />
+                            <img className='top-section-icons' src="/icons/outline/star.svg" alt="interested" />
+                            <img className='top-section-icons' src="/icons/outline/share.svg" alt="share" />
                         </div>
                     </div>
                 </div>
-
                 <div className='flex-column event-page-info-section'>
                     <div className='event-page-info-header'>Date and Time</div>
                     <div className='flex-row align-center event-page-info'>
@@ -50,6 +50,39 @@ function EventPage() {
                         <div className='flex-column align-center justify-around event-page-host-name'>
                             <div className='event-page-info-text'>Host Name</div>
                             <button className='button-2 event-page-follow-button'>Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex-column event-page-info-section'>
+                    <div className='event-page-info-header'>Event Description</div>
+                    <div className='event-page-info-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ratione natus reiciendis minima expedita! Esse et error temporibus unde dignissimos officiis eius minima,
+                        nobis molestias assumenda aut quia illum consequuntur optio?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit molestias dolorem corporis. Voluptatem,
+                        atque! Itaque, officia, eaque dolorum praesentium eos autem cupiditate,
+                        doloremque hic porro culpa deleniti corrupti voluptas quibusdam?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error facilis autem similique tenetur numquam, quaerat aut,
+                        magni repellendus totam fugit labore dignissimos, eveniet deserunt dolor omnis possimus maxime fuga quos?
+                    </div>
+                </div>
+                <div className='flex-column event-page-info-section buy-ticket-section'>
+                    <div className='flex-column'>
+                        <button className='flex-row align-center justify-around button-2 buy-ticket-button'>
+                            <img className='event-page-info-icon' src="/icons/solid/ticket.svg" alt="calendar" />
+                            Buy Tickets
+                        </button>
+                        <div className='flex-row align-center event-page-info center-self'>
+                            <img className='event-page-info-icon' src="/icons/outline/users.svg" alt="calendar" />
+                            <div className='event-page-info-text'>Participants | 0/50</div>
+                        </div>
+                    </div>
+                    <div className='flex-column'>
+                        <div className='event-page-info-header'>Ticket Information</div>
+                        <div>
+                            <div className='flex-row align-center event-page-info'>
+                                <img className='event-page-info-icon' src="/icons/solid/ticket.svg" alt="calendar" />
+                                <div className='event-page-info-text'>Standard Ticket | JOD 999 each</div>
+                            </div>
                         </div>
                     </div>
                 </div>

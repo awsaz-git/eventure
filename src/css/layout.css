@@ -71,3 +71,7 @@
 .items-center {
     place-items: center;
 }
+
+.center-self {
+    place-self: center;
+}
