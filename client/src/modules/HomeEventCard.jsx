@@ -5,7 +5,7 @@ function HomeEventCard() {
 
 
     return (
-        <Link to='/e' className='flex-column justify-between align-center home-event-card'>
+        <Link to='/e/000000' className='flex-column justify-between align-center home-event-card'>
             <div className='flex-column justify-center align-center home-event-top-section'>
                 <div className='home-event-category'>Event Category</div>
                 <img className='home-event-poster' src="/images/petra.jpg" alt="event poster" />

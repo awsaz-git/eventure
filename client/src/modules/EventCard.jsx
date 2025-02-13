@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function EventCard() {
 
     return (
-        <Link to='/e' className='event-card'>
+        <Link to='/e/12345' className='event-card'>
             <div className='event-top'>
                 <div className='event-star'>
                     <img src="/icons/outline/star.svg" alt="interested" />

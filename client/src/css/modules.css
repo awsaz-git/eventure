@@ -614,8 +614,6 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.15);
-    -ms-overflow-style: none;
-    scrollbar-width: none;
     z-index: 9999;
     padding-top: 40px;
     padding-bottom: 30px;
@@ -623,13 +621,15 @@
     transition: bottom 1s ease, height 1s ease;
 }
 
-.filter-bottomsheet-container::-webkit-scrollbar {
+.filter-bottomsheet-content::-webkit-scrollbar {
     display: none;
 }
 
 .filter-bottomsheet-content {
     width: 80%;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .filter-exit-icon {
