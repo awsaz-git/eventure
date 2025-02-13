@@ -16,10 +16,17 @@ function EventCard() {
                 <div className='event-title'>Event title that can go up to two lines</div>
                 <div className='event-venue-date'>Mmm 00 | Event venue that can go up to one line</div>
                 <div className='event-time'>00:00 PM - 00:00 PM</div>
-                <div className='flex-row align-center event-info'>
-                    <img className='event-info-icon' src="/icons/ticket-green.svg" alt="ticket" />
-                    <div className='event-info-text'>JOD 999</div>
+                <div>
+                    <div className='flex-row align-center event-info'>
+                        <img className='event-info-icon' src="/icons/ticket-green.svg" alt="ticket" />
+                        <div className='event-info-text'>JOD 999</div>
+                    </div>
+                    <div className='flex-row align-center event-info'>
+                        <img className='event-info-icon' src="/icons/star.svg" alt="star" />
+                        <div className='event-info-text intereseted'>99 intereseted</div>
+                    </div>
                 </div>
+
             </div>
         </Link>
     );

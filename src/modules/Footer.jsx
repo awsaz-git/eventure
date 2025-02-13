@@ -28,7 +28,7 @@ function Footer() {
                         <div className='footer-text'>Sports & Outdoors</div>
                         <div className='footer-text'>Workshops & Classes</div>
                         <div className='footer-text'>Concerts & Entertainment</div>
-                        <div className='footer-text'>Cultural & Arts</div>
+                        <div className='footer-text'>Culture & Arts</div>
                     </div>
                     <div className='footer-links'>
                         <div>Follow Us</div>

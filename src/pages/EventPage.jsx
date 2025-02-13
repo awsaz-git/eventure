@@ -1,5 +1,5 @@
 import '../css/style.css'
-import HomeEventCard from '../modules/HomeEventCard.jsx'
+import Rating from '../modules/Rating.jsx';
 
 function EventPage() {
 
@@ -43,12 +43,15 @@ function EventPage() {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.6214575763147!2d35.83003167611204!3d31.97116472473103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca10068eeddab%3A0x2e1b5902b11076fe!2sBusiness%20park!5e0!3m2!1sen!2sjo!4v1739367156163!5m2!1sen!2sjo"
                         className='location-embed' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
                 </div>
-                <div className='flex-column event-page-info-section'>
+                <div className='flex-column event-page-info-section host-section'>
                     <div className='event-page-info-header'>Hosted By</div>
                     <div className='flex-row align-center event-page-host-info'>
                         <img className='host-image' src="/images/muslim-giga-chad.jpg" alt="calendar" />
                         <div className='flex-column align-center justify-around event-page-host-name'>
-                            <div className='event-page-info-text'>Host Name</div>
+                            <div className='flex-column align-center'>
+                                <div className='event-page-info-text'>Host Name</div>
+                                <Rating readOnly={true} value={4} />
+                            </div>
                             <button className='button-2 event-page-follow-button'>Follow</button>
                         </div>
                     </div>
@@ -67,16 +70,6 @@ function EventPage() {
                 </div>
                 <div className='flex-column event-page-info-section buy-ticket-section'>
                     <div className='flex-column'>
-                        <button className='flex-row align-center justify-around button-2 buy-ticket-button'>
-                            <img className='event-page-info-icon' src="/icons/solid/ticket.svg" alt="calendar" />
-                            Buy Tickets
-                        </button>
-                        <div className='flex-row align-center event-page-info center-self'>
-                            <img className='event-page-info-icon' src="/icons/outline/users.svg" alt="calendar" />
-                            <div className='event-page-info-text'>Participants | 0/50</div>
-                        </div>
-                    </div>
-                    <div className='flex-column'>
                         <div className='event-page-info-header'>Ticket Information</div>
                         <div>
                             <div className='flex-row align-center event-page-info'>
@@ -85,6 +78,17 @@ function EventPage() {
                             </div>
                         </div>
                     </div>
+                    <div className='flex-column'>
+                        <button className='flex-row align-center button-2 buy-ticket-button'>
+                            <img className='event-page-info-icon' src="/icons/solid/ticket.svg" alt="calendar" />
+                            Buy Tickets
+                        </button>
+                        <div className='flex-row align-center event-page-info center-self'>
+                            <img className='event-page-info-icon' src="/icons/outline/users.svg" alt="calendar" />
+                            <div className='event-page-info-text'>Participants | 0/50</div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

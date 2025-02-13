@@ -313,6 +313,7 @@
     gap: 25px;
     transform: translateY(100%);
     transition: all 1s ease;
+    cursor: pointer;
 }
 
 .categories-item.show {
@@ -343,8 +344,9 @@
 .category-image {
     width: 100px;
     height: 100px;
-    background-color: grey;
     border-radius: 150px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .category-name {
@@ -826,6 +828,11 @@
     font-weight: 600;
 }
 
+.event-info-text.intereseted {
+    color: var(--accent-purple);
+    font-weight: 600;
+}
+
 /** event page **/
 
 .event-page-container {
@@ -915,16 +922,16 @@
 }
 
 .event-page-info-text {
-    font-size: 13px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .event-page-host-info {
     gap: 15px;
-    height: 65px;
 }
 
 .event-page-host-name {
-    height: 100%;
+    gap: 10px;
 }
 
 .event-page-follow-button {
@@ -947,6 +954,7 @@
     font-size: 14px;
     font-weight: 600;
     place-self: center;
+    gap: 5px;
 }
 
 .buy-ticket-section {
@@ -1149,10 +1157,6 @@
         font-size: 19px;
     }
 
-    .event-page-info-text {
-        font-size: 14px;
-    }
-
     .event-page-info-icon {
         width: 22px;
     }
@@ -1267,6 +1271,45 @@
     .event-page-image {
         width: 100%;
         height: 400px;
+    }
+
+    .event-page-title {
+        font-size: 30px;
+        font-weight: bolder;
+        width: 85%;
+    }
+
+    .top-section-icons {
+        width: 35px;
+        height: 35px;
+    }
+
+    .event-page-info-header {
+        font-size: 22px;
+    }
+
+    .event-page-info-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .event-page-info-text {
+        font-size: 16px;
+    }
+
+    .buy-ticket-button {
+        width: 200px;
+        height: 60px;
+        gap: 10px;
+        font-size: 17px;
+    }
+
+    .location-embed {
+        max-width: 500px;
+    }
+
+    .address-text {
+        max-width: 350px;
     }
 }
 
@@ -1480,6 +1523,52 @@
 
     .event-page-back-button {
         left: 20px;
+    }
+
+    .event-page-title {
+        font-size: 45px;
+    }
+
+    .top-section-icons {
+        width: 40px;
+        height: 40px;
+    }
+
+    .event-page-info-header {
+        font-size: 24px;
+    }
+
+    .event-page-info-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .event-page-info-text {
+        font-size: 20px;
+    }
+
+    .buy-ticket-button {
+        width: 225px;
+        height: 65px;
+        gap: 10px;
+        font-size: 19px;
+    }
+
+    .host-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .event-page-info-description {
+        font-size: 18px;
+    }
+
+    .location-embed {
+        max-width: 550px;
+    }
+
+    .address-text {
+        max-width: 350px;
     }
 }
 

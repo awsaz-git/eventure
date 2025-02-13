@@ -23,8 +23,7 @@ function CategoryItem(props) {
 
     return (
         <div className='flex-column align-center justify-between categories-item'>
-            <div className='category-image'>
-            </div>
+            <img src={props.imagePath} alt='category image' className='category-image' />
             <div className='category-name'>{props.categoryName}</div>
         </div>
     );
