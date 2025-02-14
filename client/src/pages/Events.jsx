@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Hero from '../modules/Hero.jsx'
 import EventSection from '../modules/EventSection.jsx'
 import FilterBottomSheet from '../modules/FilterBottomSheet.jsx'

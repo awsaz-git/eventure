@@ -1,10 +1,20 @@
 import '../css/style.css'
 import EventCard from './EventCard.jsx'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react'
 
 function EventSection() {
+    const [events, setEvents] = useState([]);
 
     useEffect(() => {
+        fetch("http://localhost:8000/events")
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                setEvents(data);
+            })
+            .catch((error) => console.error("Error fetching events:", error));
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
 
@@ -18,7 +28,7 @@ function EventSection() {
             observer.observe(element);
         });
 
-    }, []);
+    }, [events]);
 
     const openFilterSheet = () => {
         const bototmSheet = document.querySelector('.filter-bottomsheet-container');
@@ -107,23 +117,19 @@ function EventSection() {
                     </div>
                 </div>
                 <div className='events-list'>
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
+                    {events.length > 0 ? (
+                        events.map(event => (
+                            <EventCard
+                                id={event.id}
+                                eventTitle={event.title}
+                                eventDate={event.date}
+                                startTime={event.start_time}
+                                endTime={event.end_time}
+                            />
+                        ))
+                    ) : (
+                        <p>No events found</p>
+                    )}
                 </div>
             </div>
         </div>

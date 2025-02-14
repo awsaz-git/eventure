@@ -1,10 +1,10 @@
 import '../css/style.css'
 import { Link } from 'react-router-dom';
 
-function EventCard() {
+function EventCard(props) {
 
     return (
-        <Link to='/e/12345' className='event-card'>
+        <Link to={`/e/${props.id}`} className='event-card'>
             <div className='event-top'>
                 <div className='event-star'>
                     <img src="/icons/outline/star.svg" alt="interested" />
@@ -13,9 +13,9 @@ function EventCard() {
                 <div className='event-category'>Event Category</div>
             </div>
             <div className='flex-column align-start justify center event-bottom'>
-                <div className='event-title'>Event title that can go up to two lines</div>
-                <div className='event-venue-date'>Mmm 00 | Event venue that can go up to one line</div>
-                <div className='event-time'>00:00 PM - 00:00 PM</div>
+                <div className='event-title'>{props.eventTitle}</div>
+                <div className='event-venue-date'>{props.eventDate} | Event venue that can go up to one line</div>
+                <div className='event-time'>{props.startTime} - {props.endTime}</div>
                 <div>
                     <div className='flex-row align-center event-info'>
                         <img className='event-info-icon' src="/icons/ticket-green.svg" alt="ticket" />
